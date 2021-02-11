@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import Header from "./utils/Header.js";
 import Home from "./components/Home/Home.js";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getProducts } from "./actions/products";
-import { useSelector } from "react-redux";
+// import { ThemeProvider } from "styled-components";
 
 function App() {
   const dispatch = useDispatch();
-  console.log("app");
 
   useEffect(() => {
     dispatch(getProducts());
