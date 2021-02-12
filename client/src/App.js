@@ -5,6 +5,8 @@ import Home from "./components/Home/Home.js";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getProducts } from "./actions/products";
+import StoreFront from "./routes/StoreFront";
+import { GlobalStyles } from "./styles/components/GlobalStyles";
 // import { ThemeProvider } from "styled-components";
 
 function App() {
@@ -15,12 +17,15 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="App">
+    // <div className="App">
+    <>
+      <GlobalStyles />
       <BrowserRouter>
         <Header />
-        <Route exact path="/" exact component={Home} />
+        <Route exact path="/" exact component={StoreFront} />
       </BrowserRouter>
-    </div>
+    </>
+    // </div>
   );
 }
 
