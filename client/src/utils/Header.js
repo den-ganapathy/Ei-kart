@@ -10,7 +10,8 @@ const mlogo2 = require("./../img/mlogo2.png");
 const Header = () => {
   return (
     <HeaderWrapper>
-      <img src={mlogo2.default} />
+      <img className="logo2" src={mlogo2.default} />
+      <img className="logo1" src={mlogo1.default} />
       <div>
         <LoginButton>Login</LoginButton>
         <SignUpButton>Sign Up</SignUpButton>

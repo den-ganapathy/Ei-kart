@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { devices } from "./../utils/Devices";
 
 export const HeaderWrapper = styled.div`
-  background: black;
   display: flex;
   background-color: white;
   padding: 1rem 1rem;
@@ -10,9 +10,24 @@ export const HeaderWrapper = styled.div`
   font-family: monospace;
   color: black;
   font-size: 2rem;
-  & img {
+  & .logo1 {
+    display: none;
+  }
+  & .logo2 {
     cursor: pointer;
   }
+
+  /* @media only screen and (min-width: 700px) {
+    max-width: 800px;
+    background: green;
+    & .logo1 {
+      display: inline;
+      cursor: pointer;
+    }
+    & .logo2 {
+      display: none;
+    }
+  } */
 `;
 
 export const LoginButton = styled.button`
