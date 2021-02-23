@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 const StoreFront = () => {
   const products = useSelector((state) => state.products);
   console.log("storefront", products);
+
   return (
     <div className="storefront">
       {products ? (

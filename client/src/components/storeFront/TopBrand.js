@@ -14,6 +14,22 @@ const TopBrand = () => {
           <img src={Samsung.default} alt="" />
           <p>Samsung</p>
         </BrandItem>
+        <BrandItem>
+          <img src={Samsung.default} alt="" />
+          <p>Samsung</p>
+        </BrandItem>
+        <BrandItem>
+          <img src={Samsung.default} alt="" />
+          <p>Samsung</p>
+        </BrandItem>
+        <BrandItem>
+          <img src={Samsung.default} alt="" />
+          <p>Samsung</p>
+        </BrandItem>
+        <BrandItem>
+          <img src={Samsung.default} alt="" />
+          <p>Samsung</p>
+        </BrandItem>
       </BrandLists>
     </BrandWrapper>
   );
