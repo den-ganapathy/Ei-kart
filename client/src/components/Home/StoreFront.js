@@ -27,7 +27,7 @@ const StoreFront = () => {
           );
         })
       ) : (
-        <div>abc</div>
+        <div></div>
       )}
     </div>
   );
