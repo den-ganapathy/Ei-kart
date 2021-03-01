@@ -3,31 +3,22 @@ import { devices } from "./../utils/Devices";
 
 export const HeaderWrapper = styled.div`
   display: flex;
-  background-color: white;
-  padding: 1rem 1rem;
+  z-index: 1;
+  width: 98vw;
+  font-weight: bold;
+  box-shadow: 0 0px 10px black;
   justify-content: space-between;
+  position: fixed;
   align-items: center;
-  font-family: monospace;
-  color: black;
-  font-size: 2rem;
+  background: rgba(255, 255, 255, 1);
+  padding: 0.5rem 1rem;
   & .logo1 {
     display: none;
   }
   & .logo2 {
     cursor: pointer;
+    width: 10rem;
   }
-
-  /* @media only screen and (min-width: 700px) {
-    max-width: 800px;
-    background: green;
-    & .logo1 {
-      display: inline;
-      cursor: pointer;
-    }
-    & .logo2 {
-      display: none;
-    }
-  } */
 `;
 
 export const LoginButton = styled.button`

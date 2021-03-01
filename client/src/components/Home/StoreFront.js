@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const StoreFront = () => {
   const products = useSelector((state) => state.products);
-
+  console.log(products, "sssss");
   return (
     <div className="storefront">
       {products ? (
