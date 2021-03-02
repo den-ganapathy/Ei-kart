@@ -44,6 +44,19 @@ const TopBrand = () => {
             );
           })}
       </div>
+      <div className="header">Top Brands </div>
+      <div className="brand">
+        {BrandData &&
+          BrandData.map((data) => {
+            const { id, img, name } = data;
+            return (
+              <div key={id} className="brand-container">
+                <img src={img} alt="" />
+                <p>{name}</p>
+              </div>
+            );
+          })}
+      </div>
     </BrandWrapper>
   );
 };
