@@ -5,7 +5,8 @@ const bodyparser = require("body-parser");
 var cors = require("cors");
 const app = express();
 
-const uri = PROCESS.env.MONGO_URI;
+const uri =
+  "mongodb+srv://den:den123@cluster0.rn771.mongodb.net/product-data?retryWrites=true&w=majority";
 mongoose
   .connect(uri, { useUnifiedTopology: true, useNewUrlParser: true })
   .then(() =>
